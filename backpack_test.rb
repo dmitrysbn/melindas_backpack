@@ -56,7 +56,6 @@ class BackpackTest < MiniTest::Test
     end
   end
 
-
   ##### TESTS ABOUT PRINTING THE LIST #####
   def test_that_backpack_prints_correctly
     backpack = build(:backpack, day_of_week: 'monday', weather: 'sunny')
@@ -68,7 +67,7 @@ Day: monday, Weather: sunny
 - shirt
 - gym shoes
 - packed lunch"
-    assert_equal(expected, backpack.my_func)
+    assert_equal(expected, backpack.summary_of_items)
   end
 
 end
